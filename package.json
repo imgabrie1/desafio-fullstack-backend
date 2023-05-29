@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "typeorm": "typeorm-ts-node-commonjs",
-    "vercel": "yarn run typeorm migration:generate ./src/migrations/InitialMigration -- -d ./src/data-source.ts"
+    "vercel-build": "yarn run typeorm migration:generate ./src/migrations/InitialMigration -- -d ./src/data-source.ts"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
