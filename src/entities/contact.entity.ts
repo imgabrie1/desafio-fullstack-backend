@@ -10,7 +10,7 @@ class Contact {
     id: number
 
     @Column({ type: "varchar", length: 50 })
-    full_name: string
+    name: string
 
     @Column({ type: "varchar", length: 50 })
     email: string
