@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
-    "typeorm": "typeorm-ts-node-commonjs",
-    "vercel-build": "yarn run typeorm migration:generate ./src/migrations/InitialMigration -- -d ./src/data-source.ts && npm run typeorm migration:run -- -d ./src/data-source"
+    "typeorm": "typeorm-ts-node-commonjs"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
