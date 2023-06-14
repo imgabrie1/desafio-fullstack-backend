@@ -20,7 +20,7 @@ const createContactService = async (
     })
 
     if(!user) {
-        throw new AppError("Usuário não encontrado")
+        throw new AppError("User not found")
     }
 
     const contactRepository: iContactRepo = AppDataSource.getRepository(Contact)
